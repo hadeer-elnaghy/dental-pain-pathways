@@ -384,7 +384,9 @@ body {
    DIVIDER SECTION
    =================================== */
 .divider-section {
-    padding: var(--spacing-xl) 0;
+    padding-bottom: var(--spacing-xl);
+    padding-right: var(--spacing-xl);
+    padding-left: var(--spacing-xl);
     background: linear-gradient(180deg, #ffffff 0%, var(--light-bg) 100%);
     text-align: center;
 }
@@ -923,6 +925,7 @@ body {
         scroll-behavior: smooth;
     }
 }
+
 /* Question 3 Mobile Styles */
 @media (max-width: 640px) {
     .image-gallery {
