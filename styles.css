@@ -386,6 +386,27 @@ body {
 .divider-section {
     padding: var(--spacing-xl) 0;
     background: linear-gradient(180deg, #ffffff 0%, var(--light-bg) 100%);
+    text-align: center;
+}
+
+.divider-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.divider-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 900;
+    color: var(--primary-dark);
+    margin-bottom: var(--spacing-md);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.divider-subtitle {
+    font-size: clamp(1.3rem, 2.5vw, 2rem);
+    color: var(--text-dark);
+    margin-bottom: var(--spacing-lg);
+    font-weight: 600;
 }
 
 .divider-image-container {
@@ -778,6 +799,34 @@ body {
 }
 
 /* ===================================
+   VIDEO SECTION
+   =================================== */
+.video-section {
+    padding: var(--spacing-xl) 0;
+    background: linear-gradient(180deg, var(--dark-bg) 0%, #1a1f3a 100%);
+}
+
+.video-section .section-title {
+    color: var(--text-light);
+}
+
+.video-container {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    background: #000;
+}
+
+.dental-video {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 600px;
+}
+
+/* ===================================
    FOOTER
    =================================== */
 .footer {
@@ -872,5 +921,25 @@ body {
 @supports (scroll-behavior: smooth) {
     html {
         scroll-behavior: smooth;
+    }
+}
+/* Question 3 Mobile Styles */
+@media (max-width: 640px) {
+    .image-gallery {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+        padding: var(--spacing-sm);
+    }
+
+    .question-card-full .question-content-full {
+        padding: var(--spacing-md);
+    }
+
+    .question-card-full .question-title {
+        font-size: 1.5rem;
+    }
+
+    .gallery-item img {
+        height: 250px;
     }
 }
